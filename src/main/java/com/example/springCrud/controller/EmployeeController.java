@@ -44,6 +44,7 @@ public class EmployeeController {
     }
     @DeleteMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable int id){
+        System.out.println("done");
         return service.deleteEmployee(id);
     }
 
